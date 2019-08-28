@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Viandas</title>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="lib/scripts.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+
+    <header id="cabecera">
+        <!-- el título de la página, logo y menú-->
+        <h1 id="titulo">miVianda</h1>
+    </header>
+
+    <section>
+        <!-- Muestra las opciones-->
+        <h2 id="subtitulo">Nuestras opciones: </h2>
+        <div class="container1">
+            <div class="izquierda">
+                <h3>OPCIÓN 1</h3>
+                <img src="https://cdn.lavoz.com.ar/sites/default/files/styles/box_128/public/nota_periodistica/DATA_ART_3682148_1560130123.JPG"
+                    alt="">
+                <h4>Precio</h4>
+            </div>
+            <div class="centro">
+                <h3>OPCIÓN 2</h3>
+                <img src="https://cdn.lavoz.com.ar/sites/default/files/styles/box_128/public/nota_periodistica/DATA_ART_3682148_1560130123.JPG"
+                    alt="">
+                <h4>Precio</h4>
+            </div>
+            <div class="derecha">
+                <h3>OPCIÓN 3</h3>
+                <img src="https://cdn.lavoz.com.ar/sites/default/files/styles/box_128/public/nota_periodistica/DATA_ART_3682148_1560130123.JPG"
+                    alt="">
+                <h4>Precio</h4>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="formulario">
+        <!-- Muestra el formulario-->
+        <div class="container">
+            <form id="form">
+                <div class="form group">
+                    <h2 id="tituloFormulario">Hacé tu pedido</h2>
+
+                    <input type="text" placeholder="Ingresa la opción elegida" id="opcion" class="form-control">
+                    <br>
+                    <input type="number" placeholder="Cuántas porciones?" id="cantidad" class="form-control">
+                    <br>
+                    <input type="text" placeholder="Nombre y apellido" id="nombreApellido" class="form-control">
+                    <br>
+                    <input type="text" placeholder="Ingresá tu dirección:" id="direccion" class="form-control">
+                    <br>
+                    <input type="number" placeholder="Teléfono" id="telefono" class="form-control">
+                    <br>
+                    <input type="email" placeholder="Déjanos tu email" id="email" class="form-control">
+                    <br>
+                    <button type="button" value="Ingresar datos" class="btn btn-success" id="agregarFila">
+                </div>
+            </form>
+    </section>
+
+    <section id="table">
+        <!-- Muestra la tabla-->
+        <table id="tablaPedido">
+            <thead>
+                <tr>
+                    <th>Opción elegida</th>
+                    <th>Nombre y Apellido</th>
+                    <th>Dirección</th>
+                    <th>Teléfono</th>
+                    <th>Email</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="tablaContenido">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <button class="btn btn-success" onclick="tableToExcel('table', 'Descargar')">Descargar Datos</button>
+    </section>
+
+    <footer>
+    </footer>
+
+</body>
+
+</html>

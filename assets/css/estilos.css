@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body {
+    background: #5C5654;
+}
+
+#cabecera {
+ background-color: #5CB247;
+ height: 110px;
+ width: 100%;
+}
+
+
+#subtitulo, #tituloFormulario {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    padding-top: 0px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #DACCC7;
+    font-weight: 400;
+    margin-top: 100px;
+}
+
+#titulo {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    color: #DACCC7;
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+.container1 {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.izquierda {
+    float: left;
+    background: grey;   
+}
+.derecha {
+    float: right;
+    background: #5CB247;
+}
+
+.centro {
+    background: red;
+    display: inline-block;
+    text-align: center;
+}
+
+#formulario {
+    background: rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    display: block;
+    max-width: 650px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#form {
+    margin-left: auto;
+    display: block;
+    max-width: 400px;
+    margin: auto;
+
+}
+
+#tituloTabla {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: #E0A1A7;
+}
+
+
+
+
+#tablaPedido {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: #F3DCDC;
+    align-content: center;
+    margin: auto;
+    display: block;
+    max-width: 600px;
+}
